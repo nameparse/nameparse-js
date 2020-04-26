@@ -19,7 +19,7 @@ console.log(results);
 ```
 
 output:
-```json
+```
 {
     id: 'LeMKGGKp2o2yCGQNzLZriW',
     name: 'Chris Schuld',
@@ -41,7 +41,7 @@ console.log(results);
 ```
 
 output:
-```json
+```
 {
     id: 'Ax323GGKp212yCGQxLZriW',
     name: 'Chris Schuld',
