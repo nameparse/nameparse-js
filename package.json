@@ -1,0 +1,50 @@
+{
+  "name": "nameparse-js",
+  "version": "1.0.0",
+  "description": "A Javascript / Typescript SDK for the www.nameparse.com service.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nameparse/nameparse-js.git"
+  },
+  "keywords": [
+    "name",
+    "human names",
+    "parsing",
+    "name cleanup",
+    "names"
+  ],
+  "author": "Chris Schuld <cbschuld@nameparse.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nameparse/nameparse-js/issues"
+  },
+  "homepage": "https://github.com/nameparse/nameparse-js#readme",
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "jest": "^25.4.0",
+    "prettier": "^2.0.5",
+    "ts-jest": "^25.4.0",
+    "tslint": "^6.1.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@types/node": "^13.13.4"
+  }
+}
